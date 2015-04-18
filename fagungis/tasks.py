@@ -95,7 +95,7 @@ def hg_pull():
 @task
 def git_pull():
     with cd(env.code_root):
-        sudo('hg pull -u')
+        sudo('git pull')
 
 @task
 def test_configuration(verbose=True):
